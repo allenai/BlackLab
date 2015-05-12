@@ -95,16 +95,16 @@ public class Hit implements Comparable<Hit>, Cloneable {
 	}
 
 	/** The Lucene doc this hits occurs in */
-	public int doc;
+	public final int doc;
 
 	/** End of this hit's span (in word positions).
 	 *
 	 *  Note that this actually points to the first word not in the hit (just like Spans).
 	 */
-	public int end;
+	public final int end;
 
 	/** Start of this hit's span (in word positions) */
-	public int start;
+	public final int start;
 
 //	/** Context information */
 //	public int[] context;
