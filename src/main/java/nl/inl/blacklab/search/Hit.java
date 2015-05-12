@@ -29,7 +29,7 @@ import nl.inl.blacklab.search.lucene.BLSpans;
  * This class has public members for the sake of efficiency; this makes a non-trivial difference
  * when iterating over hundreds of thousands of hits.
  */
-public final class Hit implements Comparable<Hit>, Cloneable {
+public class Hit implements Comparable<Hit>, Cloneable {
 	/**
 	 * Get the hit object from a Spans object.
 	 *
