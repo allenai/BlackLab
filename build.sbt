@@ -40,7 +40,7 @@ lazy val releaseProcessSetting = releaseProcess := Seq(
 
 
 lazy val buildSettings = Seq(
-  organization := "nl.inl.blacklab",
+  organization := "org.allenai.blacklab",
   crossScalaVersions := Seq(defaultScalaVersion),
   scalaVersion <<= crossScalaVersions { (vs: Seq[String]) => vs.head },
   publishMavenStyle := true,
@@ -89,9 +89,9 @@ releaseNextVersion := { ver =>
 
 javacOptions in doc := Seq(
   "-source", "1.7",
-  "-group", "Core", "nl.inl.blacklab.search:nl.inl.blacklab.search.*:nl.inl.blacklab.tools:nl.inl.blacklab.index:nl.inl.blacklab.index.*:nl.inl.blacklab.highlight:nl.inl.blacklab.queryParser.*:nl.inl.blacklab.perdocument",
-  "-group", "Examples and tests", "nl.inl.blacklab.example:nl.inl.blacklab.indexers.*",
-  "-group", "Supporting classes", "nl.inl.blacklab.filter:nl.inl.blacklab.forwardindex:nl.inl.blacklab.externalstorage:nl.inl.blacklab.suggest:nl.inl.util",
+  "-group", "Core", "org.allenai.blacklab.search:org.allenai.blacklab.search.*:org.allenai.blacklab.tools:org.allenai.blacklab.index:org.allenai.blacklab.index.*:org.allenai.blacklab.highlight:org.allenai.blacklab.queryParser.*:org.allenai.blacklab.perdocument",
+  "-group", "Examples and tests", "org.allenai.blacklab.example:org.allenai.blacklab.indexers.*",
+  "-group", "Supporting classes", "org.allenai.blacklab.filter:org.allenai.blacklab.forwardindex:org.allenai.blacklab.externalstorage:org.allenai.blacklab.suggest:org.allenai.util",
   "-Xdoclint:none")
 
 
